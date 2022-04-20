@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
-import { GoAlert, GoDatabase, GoFlame } from "react-icons/go";
+import { GoAlert, GoDatabase, GoFlame, GoMarkGithub } from "react-icons/go";
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -95,7 +95,7 @@ export default function Home() {
 					<article>
 						<Container>
 							<Row>
-								<Col xs={12} sm={6} md={4} lg={4} xl={4}>
+								<Col xs={12} sm={6} md={6} lg={6} xl={3}>
 									<Card className="techs-card">
 										<Card.Body>
 											<Card.Title className="techs-header">
@@ -140,7 +140,7 @@ export default function Home() {
 										</Card.Body>
 									</Card>
 								</Col>
-								<Col xs={12} sm={6} md={4} lg={4} xl={4}>
+								<Col xs={12} sm={6} md={6} lg={6} xl={3}>
 									<Card className="techs-card">
 										<Card.Body>
 											<Card.Title className="techs-header">
@@ -185,7 +185,7 @@ export default function Home() {
 										</Card.Body>
 									</Card>
 								</Col>
-								<Col xs={12} sm={6} md={4} lg={4} xl={4}>
+								<Col xs={12} sm={6} md={6} lg={6} xl={3}>
 									<Card className="techs-card">
 										<Card.Body>
 											<Card.Title className="techs-header">
@@ -233,6 +233,46 @@ export default function Home() {
 										</Card.Body>
 									</Card>
 								</Col>
+								<Col xs={12} sm={6} md={6} lg={6} xl={3}>
+									<Card className="techs-card">
+										<Card.Body>
+											<Card.Title className="techs-header">
+												<GoMarkGithub className="techs-icon" />
+												<h3>Development</h3>
+												<p>
+													Moving forwards, I would
+													love to be able to work with
+													more people with the same
+													passion as me.
+												</p>
+											</Card.Title>
+											<hr />
+											<Card.Text className="techs-text">
+												<Row>
+													<Col
+														xs={12}
+														className="tech-text-1"
+													>
+														<header>
+															Other Tools :
+														</header>
+														<p>Github</p>
+													</Col>
+													<Col
+														xs={12}
+														className="tech-text-2"
+													>
+														<header>
+															Guide / Learning
+															Materials
+														</header>
+														<p>YouTube</p>
+													</Col>
+												</Row>
+											</Card.Text>
+										</Card.Body>
+									</Card>
+								</Col>
 							</Row>
 						</Container>
 					</article>
@@ -253,8 +293,8 @@ export default function Home() {
 								xs={12}
 								sm={12}
 								md={12}
-								lg={6}
-								xl={4}
+								lg={12}
+								xl={12}
 								className="work-company"
 							>
 								<a href="https://national-hospital.com">

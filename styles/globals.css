@@ -47,6 +47,16 @@ a {
 	margin: 10em 0em;
 }
 
+@media screen and (max-width: 993px) {
+	.hero-header {
+		font-size: 2em;
+		padding: 1em 0em 0em 0em;
+	}
+
+	.hero-image {
+		margin: 8em;
+	}
+}
 /* PROFILE */
 .profile {
 	background-color: var(--color-blue);
@@ -126,21 +136,6 @@ a {
 .techs-text li {
 	list-style: none;
 }
-
-@media screen and (max-width: 993px) {
-	.techs-header {
-		min-height: 22em;
-	}
-
-	.tech-text-1 {
-		min-height: 10em;
-	}
-
-	.tech-text-2 {
-		min-height: 12em;
-	}
-}
-/* Work */
 
 .work {
 	margin-top: 10em;
