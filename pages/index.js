@@ -38,7 +38,10 @@ export default function Home() {
 									md={12}
 									xl={12}
 								>
-									Full Stack Web Developer
+									Full Stack{" "}
+									<strong className="hero-em">
+										Web Developer
+									</strong>
 								</Col>
 							</Row>
 						</header>
@@ -51,15 +54,17 @@ export default function Home() {
 									md={12}
 									xl={12}
 								>
-									I design and code functional web based
-									applications
+									<em>
+										I design and code functional web based
+										applications
+									</em>
 								</Col>
 								<Col>
 									<div className="hero-image text-center">
 										<Image
 											src="/code2.png"
-											width={300}
-											height={250}
+											width={600}
+											height={500}
 											className="flex"
 											alt="closed tag computer picture"
 										/>
@@ -95,7 +100,7 @@ export default function Home() {
 										<Card.Body>
 											<Card.Title className="techs-header">
 												<GoAlert className="techs-icon" />
-												<h1>Past</h1>
+												<h3>Past</h3>
 												<p>
 													Some of these i learned
 													because it piqued my
@@ -110,40 +115,25 @@ export default function Home() {
 														xs={12}
 														className="tech-text-1"
 													>
+														<header>
+															Techs List:
+														</header>
 														<p>
-															<strong>
-																Techs List:
-															</strong>
+															Laravel 5, Flutter,
+															C#, Phyton, Dart.
 														</p>
-														<ul>
-															<li>Laravel 5</li>
-															<li>Flutter</li>
-															<li>C#</li>
-															<li>Phyton</li>
-															<li>Dart</li>
-														</ul>
 													</Col>
 													<Col
 														xs={12}
 														className="tech-text-2"
 													>
+														<header>Tools</header>
 														<p>
-															<strong>
-																Tools
-															</strong>
+															Netbeans,
+															VisualStudio,
+															Jupyter Notebook,
+															Android Studio
 														</p>
-														<ul>
-															<li>Netbeans</li>
-															<li>
-																VisualStudio
-															</li>
-															<li>
-																Jupyter Notebook
-															</li>
-															<li>
-																Android Studio
-															</li>
-														</ul>
 													</Col>
 												</Row>
 											</Card.Text>
@@ -155,7 +145,7 @@ export default function Home() {
 										<Card.Body>
 											<Card.Title className="techs-header">
 												<GoDatabase className="techs-icon" />
-												<h1>Backend</h1>
+												<h3>Backend</h3>
 												<p>
 													I mainly works using MVC
 													pattern, as for databases
@@ -170,37 +160,25 @@ export default function Home() {
 														xs={12}
 														className="tech-text-1"
 													>
-														<p>
-															<strong>
-																Language
-															</strong>
-														</p>
-														<ul>
-															<li>PHP</li>
-															<li>SQL</li>
-														</ul>
+														<header>
+															Language
+														</header>
+														<p>PHP, SQL</p>
 													</Col>
 													<Col
 														xs={12}
 														className="tech-text-2"
 													>
+														<header>
+															Libraries / Tools /
+															Framework
+														</header>
 														<p>
-															<strong>
-																Libraries /
-																Tools /
-																Framework
-															</strong>
+															CodeIgniter, SQL
+															Server Management
+															Studio, XAMPP,
+															HeidiSQL
 														</p>
-														<ul>
-															<li>CodeIgniter</li>
-															<li>
-																SQL Server
-																Management
-																Studio
-															</li>
-															<li>XAMPP</li>
-															<li>HeidiSQL</li>
-														</ul>
 													</Col>
 												</Row>
 											</Card.Text>
@@ -212,7 +190,7 @@ export default function Home() {
 										<Card.Body>
 											<Card.Title className="techs-header">
 												<GoFlame className="techs-icon" />
-												<h1>Frontend</h1>
+												<h3>Frontend</h3>
 												<p>
 													I often use frontend
 													framework, mainly because i
@@ -227,37 +205,28 @@ export default function Home() {
 														xs={12}
 														className="tech-text-1"
 													>
+														<header>
+															Languages :
+														</header>
 														<p>
-															<strong>
-																Languages :
-															</strong>
+															HTML, CSS,
+															Javascript
 														</p>
-														<ul>
-															<li>HTML</li>
-															<li>CSS</li>
-															<li>Javascript</li>
-														</ul>
 													</Col>
 													<Col
 														xs={12}
 														className="tech-text-2"
 													>
+														<header>
+															Libraries / Tools /
+															Framework
+														</header>
 														<p>
-															<strong>
-																Libraries /
-																Tools /
-																Framework
-															</strong>
+															Bootstrap,
+															Materialize, JQuery,
+															AJAX, Datatable,
+															MomentJS, ChartJS
 														</p>
-														<ul>
-															<li>Bootstrap</li>
-															<li>Materialize</li>
-															<li>JQuery</li>
-															<li>AJAX</li>
-															<li>Datatable</li>
-															<li>MomentJS</li>
-															<li>ChartJS</li>
-														</ul>
 													</Col>
 												</Row>
 											</Card.Text>
@@ -267,6 +236,39 @@ export default function Home() {
 							</Row>
 						</Container>
 					</article>
+				</section>
+				<section className="work">
+					<Container>
+						<article>
+							<header className="work-header">
+								Work Experience
+							</header>
+							<p className="work-sub">
+								I'm proud and grateful to have the chance to
+								work in these companies :
+							</p>
+						</article>
+						<Row className="work-companies">
+							<Col
+								xs={12}
+								sm={12}
+								md={12}
+								lg={6}
+								xl={4}
+								className="work-company"
+							>
+								<a href="https://national-hospital.com">
+									<Image
+										src="/nh-white.png"
+										width={750}
+										height={250}
+										className="flex"
+										alt="closed tag computer picture"
+									/>
+								</a>
+							</Col>
+						</Row>
+					</Container>
 				</section>
 			</main>
 		</>
